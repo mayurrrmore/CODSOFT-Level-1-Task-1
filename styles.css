@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    background-color: #e077ac;
+}
+
+.logo {
+    max-width: 10%; 
+    height: 5%; 
+    margin-right: 20px;
+}
+.navbar {
+    background-color: #f7f7f7; 
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    justify-content: center; 
+    color: rgb(12, 12, 12);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 10px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black;
+  }
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.location-cart button {
+    margin-right: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.location-cart button:last-child {
+    border-radius: 10px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('M.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 3%; 
+    transform: translate(0, -50%);
+    text-align: left; 
+    color: white;
+    padding: 20px; 
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.banner-text h1 {
+    margin-bottom: 0;
+}
+
+.banner-text p {
+    margin-top: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+
+
+.main .banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #ffebcd;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+}
+
+.banner button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f33091;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.banner button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 13, 101);
+}
+.banner-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+  .tab p {
+    font-size: 13px; 
+  }
+  
+  .tab {
+    margin: 5px;
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .tab img {
+    border-radius: 15%; 
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.5s;
+  }
+
+  .tab:hover {
+     background-color: #fffdfd; 
+  }
+  .tab:hover img {
+    transform: scale(1.3); 
+}
+
+.frame {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(243, 240, 240);
+    align-items: center;
+    padding: 20px;
+    background-color: #eb96c0;
+    height: 20px;
+  }
+
+  .view-all-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+    margin: 5px;
+    transition: transform 0.5s; 
+}
+
+.view-all-button:hover {
+    transform: scale(1.1); 
+}
+
+
+.image-box {
+ 
+    padding: 10px;
+    width: 98%; 
+    height: 300px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-box img {
+    width: 400%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px; 
+    transition: transform 0.5s; 
+}
+.image-box:hover img {
+    transform: scale(1.03); 
+}
+
+.product {
+    background-color: #eb96c0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 30px;
+    box-sizing: border-box; 
+    margin: 5px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.product img {
+    width: 170px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: transform 0.5s; 
+}
+
+
+.product p {
+    text-align: center;
+    font-size: 10px;
+
+    
+}
+.product:hover img {
+    transform: scale(1.1);
+}
+  .ORDER {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+    margin: 20px;
+
+    
+}
+
+.landscape-box {
+    width: 97%; 
+    box-sizing: border-box;
+
+    border: 3px solid  #eb96c0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+.flags {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.flag img {
+    
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    transition: transform 0.5s; 
+}
+
+.flag p {
+    text-align: center;
+}
+.flag img:hover {
+    transform: scale(1.3); 
+}
+.text-container {
+    width: 80%; 
+    margin: auto;
+    box-sizing: border-box;
+    
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 10px;
+}
+.image-container {
+    width: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #eeafce;
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    overflow: hidden;
+    height: 300px; 
+    width: auto; 
+    border-radius: 3%; 
+    margin-bottom: 20px; 
+    margin-right: 20px; 
+}
+
+.image-container img {
+    width: 300px; 
+    height: 300px; 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.order-button {
+    background-color: rgb(241, 13, 101);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    font-size: large;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out; 
+}
+
+.order-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 13, 101);
+}
+
+
+
+footer {
+    background-color: #eb96c0;
+    text-align: center;
+    padding: 20px;
+    height: 85px; 
+    color: rgb(255, 255, 255);
+    
+}
